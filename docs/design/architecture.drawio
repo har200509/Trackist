@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.5">
+  <diagram name="Trackist Architecture" id="vSwJCY_AtPxwyPjfi0t3">
+    <mxGraphModel dx="1484" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-1" parent="1" style="rounded=1;fillColor=#1f3b5c;fontColor=#ffffff;" value="Client Layer&#xa;React Web App (Browser)" vertex="1">
+          <mxGeometry height="90" width="220" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-2" parent="1" style="rounded=1;fillColor=#2e6b3f;fontColor=#ffffff;" value="Application Layer&#xa;Backend API (Node.js / Express)&#xa;• Routes&#xa;• Controllers&#xa;• Services&#xa;• Auth Module" vertex="1">
+          <mxGeometry height="150" width="300" x="320" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-3" parent="1" style="rounded=1;fillColor=#7a5c00;fontColor=#ffffff;" value="External Content APIs" vertex="1">
+          <mxGeometry height="70" width="240" x="350" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-4" parent="1" style="shape=cylinder;fillColor=#7f3b3b;fontColor=#ffffff;" value="PostgreSQL Database" vertex="1">
+          <mxGeometry height="90" width="200" x="700" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-5" parent="1" style="shape=cylinder;fillColor=#5a4378;fontColor=#ffffff;" value="Redis Cache" vertex="1">
+          <mxGeometry height="90" width="200" x="700" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-6" parent="1" style="rounded=1;fillColor=#224d2d;fontColor=#ffffff;" value="Infrastructure Layer&#xa;Docker + Cloud/VPS Deployment" vertex="1">
+          <mxGeometry height="110" width="260" x="980" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-7" edge="1" parent="1" source="9B0LPWjHVuusOS2JN8Pp-1" style="endArrow=classic;" target="9B0LPWjHVuusOS2JN8Pp-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-8" edge="1" parent="1" source="9B0LPWjHVuusOS2JN8Pp-2" style="endArrow=classic;" target="9B0LPWjHVuusOS2JN8Pp-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-9" edge="1" parent="1" source="9B0LPWjHVuusOS2JN8Pp-2" style="endArrow=classic;" target="9B0LPWjHVuusOS2JN8Pp-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9B0LPWjHVuusOS2JN8Pp-10" edge="1" parent="1" source="9B0LPWjHVuusOS2JN8Pp-2" style="endArrow=classic;" target="9B0LPWjHVuusOS2JN8Pp-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

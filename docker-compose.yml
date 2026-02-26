@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: trackist-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+
+  app-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trackist-prod
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
